@@ -19,6 +19,8 @@ function FindProxyForURL(url, host)
         return "PROXY 192.168.11.64:10080";
     else if (shExpMatch(host, "*.youtubekids.com"))
         return "PROXY 192.168.11.64:10080";
+    else if (shExpMatch(host, "*.netflix.com"))
+        return "PROXY 192.168.11.64:10080";
 
     // どこにも合致しない場合は、諦めて direct 接続
     return "DIRECT";
